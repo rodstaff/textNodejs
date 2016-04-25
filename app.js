@@ -43,6 +43,6 @@ next();
 };        // end of callKatie function
 
 app.use(callKatie);
-app.get('/callKatie', function (req, res) {
+app.get('/16178353829', function (req, res) {
   res.send('Hi Katie, everytime you refresh the browser, you will receive a text!'); // this is sent to the Browser!
 });
