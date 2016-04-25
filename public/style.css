@@ -1,0 +1,39 @@
+  header {
+      text-align: center;
+      background: url("brooklyn.jpg");
+      background-size: cover;
+      color: #e5c100;
+  }
+  body {
+      text-align: center;
+      color: black;
+  }
+  img {
+      width:  300px;
+      height: 200px;
+      margin: 0px 0px 0px 0px;
+      border: 7px solid #e5c100;
+  /*  border: 7px solid white; */
+      border-radius: 20px;
+  }
+  button {
+      font-size: 17px;
+      color: green;
+  }
+  h1 {
+      font-size: 75px;
+  }
+  h2 {
+      font-size: 40px;
+  }
+  h3 {
+      font-size: 20px;
+  }
+  }
+  h4 {
+      font-size: 20px;
+  }
+  h5 {
+      font-size: 17px;
+      color: #e5c100;
+  }

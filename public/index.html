@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<link href="style.css" rel="stylesheet">
+
+<header>
+
+<h1>Hello StartUp I!</h1>
+<h2>Twilio API Text Message Response Using Node.js</h2>
+<h3>by RodK</h4>
+
+</header>
+
+<body>
+
+<button onClick="getNumber()">Click and enter your 11-digit phone number here</button>
+<button onClick="submitNum()">Submit number</button>
+<h4>This demo App can only work with Katie Bickford's cell phone.</h4>
+<h5>Thank you for visiting this site!!!</h5>
+
+<img src="rodk2.jpg">
+
+<script>
+var enterNumber = "";
+var compare = 0;
+var counter = 0;
+
+function getNumber() {
+
+enterNumber = prompt("The phone number with the country code should be numbers only without space, parenthesis or hyphens e.g. +19876543210"); 
+    var splitNumber = enterNumber.split("");
+    counter = splitNumber.length;
+
+    for (i=1;i<12;i++) {    
+    
+      switch(splitNumber[i]){
+      case "0": compare++; break;
+      case "1": compare++; break;
+      case "2": compare++; break;
+      case "3": compare++; break;
+      case "4": compare++; break;
+      case "5": compare++; break;
+      case "6": compare++; break;
+      case "7": compare++; break;
+      case "8": compare++; break;
+      case "9": compare++; break;
+      };
+
+    };
+
+    if (counter > 12) alert("Error Message:  There are more than 11 characters including numbers, spaces and punctuations in the phone number. Remember:  Exactly 11 numeric characters preceded by a '+' are necessary, example +12127894321.");
+    else if (splitNumber[0] == "+" && compare >10) alert ("Success!  Now ready to submit.  Your number is " + enterNumber + ".  Please click the 'Click to submit number' button below.");
+    else alert("Error Message:  There is something wrong with the number, please check and try again.  Remember:  Exactly 11 numeric characters preceded by a '+' will be accepted here, example +12127894321.");
+    
+    compare = 0;
+    counter = 0;
+
+}; // end of function getNumber()
+// The intention was to create a function here that will enable onclick of button...
+function submitNum() {
+         alert("Hello Katie!");
+         };
+
+</script>
+</body>
+
+
+
