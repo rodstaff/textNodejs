@@ -14,7 +14,7 @@ var twilio = require('twilio');
 var client = new twilio.RestClient(config.accountSid, config.authToken);
 // Create a new REST API client to make authenticated requests against the
 // twilio back end
-var textNumber = '+13476785225';
+var textNumber = '+16178353829';
 var textMessage = 'Hello Katie!  Warm regards from Rod!'
 // Setting destination number and text body
 var textObject = {to:textNumber,from:config.twilioNumber,body:textMessage};
