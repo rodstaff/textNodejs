@@ -40,7 +40,7 @@ var sendText = function (req, res, next) {
 });
 console.log('Hello one more time!'); // this is sent to the cmd console!
 next();
-};        // end of callKatie function
+};        // end of sendText function
 
 app.use(sendText);
 app.get('/sendSMS', function (req, res) {
