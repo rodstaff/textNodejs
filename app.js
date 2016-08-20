@@ -4,6 +4,7 @@ var port = process.env.PORT || 8008;
 // var port = process.env.PORT || 8008;  // inside config.js
 app.use(express.static(__dirname + '/public'));
 app.listen(port);
+console.log('Running on port ' + port);
 
 //below is a function for making Twilio text messages
 var sendText = function (req, res, next) {
@@ -14,7 +15,7 @@ var sendText = function (req, res, next) {
    var client = new twilio.RestClient(config.accountSid, config.authToken);
    // Create a new REST API client to make authenticated requests against the
    // twilio back end
-   var textNumber = '+13476785225';
+   var textNumber = '+16466838558';
    var textMessage = 'Hello!  Warm regards from Rod!'
    // Setting destination number and text body
    var textObject = {to:textNumber,from:config.twilioNumber,body:textMessage};
@@ -38,11 +39,12 @@ var sendText = function (req, res, next) {
         console.log('Oops! There was an error.');
       }
 });
-console.log('Hello one more time!'); // this is sent to the cmd console!
+
+console.log('Text message was sent!'); // this is sent to the terminal console!
 next();
 };        // end of sendText function
 
 app.use(sendText);
-app.get('/sendSMS', function (req, res) {
-  res.send('Hello There!  Everytime you refresh your browser, you will receive a text!'); // this is sent to the Browser!
+app.get('/sendText', function (req, res) {
+  res.send('Hello There!  Everytime you refresh your browser, you will receive a text!'); 
 });

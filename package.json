@@ -1,15 +1,15 @@
 {
-  "name": "textNodejs",
+  "name": "my-twilio-app",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "RodK",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "An SMS app using Twilio API"
 }
