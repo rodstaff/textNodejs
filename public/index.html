@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<link href="style.css" rel="stylesheet">
+<html>
+  <link href="style.css" rel="stylesheet">
 
 <header>
-
-<h1>Hello StartUp I!</h1>
-<h2>Twilio API Text Message Response Using Node.js</h2>
-<h3>by RodK</h4>
-
+  <h1>Hello StartUp I!</h1>
+  <h2>Twilio API Text Message Response Using Node.js</h2>
+  <h3>by RodK</h4>
 </header>
 
 <body>
+  <button onClick="getNumber()">Click and enter your 11-digit phone number here</button>
+  <button onClick="submitNum()">Submit number</button>
 
-<button onClick="getNumber()">Click and enter your 11-digit phone number here</button>
-<button onClick="submitNum()">Submit number</button>
+  <h4>On your browser window, type "/sendText" after the port number and a text will be sent!.</h4>
+  <h5>Thank you for visiting this site!!!</h5>
 
-<h4>On your browser window, type "/sendText" after the port number and a text will be sent!.</h4>
-
-<h5>Thank you for visiting this site!!!</h5>
-
-<img src="rodk2.jpg">
+  <img src="rodk2.jpg">
 
 <script>
 var enterNumber = "";
@@ -63,6 +60,7 @@ function submitNum() {
 
 </script>
 </body>
+</html>
 
 
 
